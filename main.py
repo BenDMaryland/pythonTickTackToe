@@ -1,13 +1,14 @@
-
 board_state = [['0A', '1B', '2C'], ['3D', '4E', '5F'], ['6G', '7H', '8I']]
-#board_state = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
+# board_state = [['-', '-', '-'], ['-', '-', '-'], ['-', '-', '-']]
 
 print(*board_state, sep="\n")
+
 
 def input_handler():
     print('What would you like to pick:')
     number_as_string = input()
     return int(number_as_string)
+
 
 def position_parser(user_input):
     y = 0
